@@ -2,12 +2,15 @@
  * @file pages/_app.jsx
  */
 
+import { SessionProvider } from "next-auth/react";
 import "../global.css";
 
-export default ({ Component, pageProps }) => {
+export default ({ Component, pageProps: { session, ...pageProps } }) => {
   return (
-    <main className={`main`}>
-      <Component {...pageProps} />
-    </main>
+    <SessionProvider session={session}>
+      <main className={`main`}>
+        <Component {...pageProps} />
+      </main>
+    </SessionProvider>
   );
 };

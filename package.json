@@ -1,0 +1,35 @@
+{
+  "name": "2022-fm-time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "My implementation of Frontend Mentor's \"Time Tracking Dashboard\" challenge.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgdev1024/2022-fm-time-tracking-dashboard.git"
+  },
+  "keywords": [
+    "frontend",
+    "mentor",
+    "time",
+    "tracking",
+    "dashboard",
+    "challenge"
+  ],
+  "author": "Dennis Griffin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgdev1024/2022-fm-time-tracking-dashboard/issues"
+  },
+  "homepage": "https://github.com/dgdev1024/2022-fm-time-tracking-dashboard#readme",
+  "dependencies": {
+    "next": "^12.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

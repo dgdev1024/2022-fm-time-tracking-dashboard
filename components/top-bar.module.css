@@ -1,0 +1,67 @@
+.topbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 96px;
+  z-index: 3;
+}
+
+.topbarContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0px auto;
+  z-index: 3;
+}
+
+.topbarButton {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0px 4px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-very-dark-blue) !important;
+  background-color: var(--color-pale-blue) !important;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.topbarButton:hover {
+  background-color: var(--color-white) !important;
+}
+
+.topbarButton svg {
+  font-size: 1.25rem;
+}
+
+.topbarBrand svg {
+  margin: 0px;
+  font-size: 2rem;
+}
+
+.topbarBrand span {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.topbarButton span {
+  display: none;
+}
+
+.topbarNav {
+  justify-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (min-width: 800px) {
+  .topbarButton span {
+    display: block;
+  }
+}

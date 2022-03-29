@@ -1,0 +1,110 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  max-width: 480px;
+  padding: 16px;
+  background-color: var(--color-gray);
+  border-radius: 16px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.loginFormHeading {
+  width: 100%;
+  text-align: center;
+}
+
+.loginFormElement {
+  position: relative;
+  width: 100%;
+}
+
+.loginFormInput {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+}
+
+.loginFormInput:focus {
+  outline: none;
+}
+
+.loginFormLabel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 0.8rem;
+
+  transition-property: top font-size;
+  transition-duration: var(--time-transition);
+}
+
+.loginFormInput:focus + .loginFormLabel,
+.loginFormInput:not([value=""]) + .loginFormLabel {
+  top: 2px;
+  font-size: 0.5rem;
+}
+
+.loginFormSubmit {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--color-exercise);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition-property: background-color color;
+  transition-duration: var(--time-transition);
+}
+
+.loginFormSubmit:hover {
+  background-color: var(--color-exercise-dark);
+  color: var(--color-white);
+}
+
+.loginFormSubmit:disabled,
+.loginFormSubmit:disabled:hover {
+  background-color: var(--color-gray);
+  color: lightgray;
+  cursor: not-allowed;
+}
+
+.loginFormResult {
+  padding-top: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.loginFormError {
+  color: darkred;
+}
+
+@media (min-width: 800px) {
+  .loginForm {
+    border-radius: 0px 16px 16px 0px;
+  }
+
+  .loginFormHeading {
+    width: 100%;
+    text-align: left;
+  }
+
+  .loginFormInput {
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .loginFormSubmit {
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .loginFormResult {
+    text-align: left;
+  }
+}

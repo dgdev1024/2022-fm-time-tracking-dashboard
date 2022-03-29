@@ -2,11 +2,13 @@
  * @file components/layout.jsx
  */
 
+import TopBar from "./top-bar";
 import Styles from "./layout.module.css";
 
 export default function Layout({ children }) {
   return (
     <>
+      <TopBar />
       {children}
       <footer className={Styles.footer}>
         <p className={Styles.footerText}>

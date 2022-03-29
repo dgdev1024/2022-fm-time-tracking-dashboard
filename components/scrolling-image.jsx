@@ -14,11 +14,11 @@ export default function ScrollingImage({
   const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const interval = setInterval(() => {
       setCurrentStep((s) => (s + 1) % steps);
     }, 100);
 
-    return () => clearTimeout(timeout);
+    return () => clearInterval(interval);
   }, [currentStep, steps]);
 
   return (

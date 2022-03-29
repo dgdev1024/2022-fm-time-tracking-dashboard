@@ -1,0 +1,24 @@
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.authGuardLoading {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.authGuardLoading svg {
+  display: block;
+  font-size: 5rem;
+
+  animation-name: spinner;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}

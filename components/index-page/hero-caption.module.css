@@ -32,6 +32,10 @@
   text-align: center;
 }
 
+.heroCaptionButton {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
   .heroCaptionContainer {
     justify-content: flex-start;

@@ -1,0 +1,49 @@
+.loginSection {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-color: var(--color-darker-gray);
+}
+
+.loginSectionBackground {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.loginSectionBackground svg {
+  font-size: 10rem;
+  color: var(--color-dark-gray);
+}
+
+.loginSectionContainer {
+  position: relative;
+
+  display: grid;
+  place-items: center;
+
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0px auto;
+
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .loginSectionBackground svg {
+    padding-right: 16px;
+    font-size: 18rem;
+  }
+
+  .loginSectionContainer {
+    justify-items: start;
+  }
+}

@@ -1,0 +1,15 @@
+.footer {
+  padding: 16px;
+  background-color: black;
+}
+
+.footerText {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.footerText a {
+  text-decoration: none;
+  color: var(--color-pale-blue);
+}

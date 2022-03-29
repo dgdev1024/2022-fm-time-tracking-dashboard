@@ -1,0 +1,24 @@
+.testimonialsSection {
+  background-color: var(--color-dark-blue);
+}
+
+.testimonialsSectionContainer {
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0px auto;
+  padding: 32px;
+}
+
+.testimonialsSectionHeading {
+  padding-bottom: 32px;
+  text-align: center;
+  color: var(--color-pale-blue);
+}
+
+.testimonialsCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 480px));
+  gap: 32px;
+  place-items: center;
+}

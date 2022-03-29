@@ -1,0 +1,56 @@
+.heroCaptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.heroCaption {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  padding: 16px;
+  color: var(--color-pale-blue);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.heroCaptionHeading {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.heroCaptionText {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .heroCaptionContainer {
+    justify-content: flex-start;
+  }
+
+  .heroCaption {
+    border-radius: 0px 16px 16px 0px;
+  }
+
+  .heroCaptionHeading {
+    text-align: left;
+  }
+
+  .heroCaptionText {
+    text-align: left;
+  }
+
+  .heroCaptionButton {
+    text-align: left;
+    border-radius: 0px 16px 16px 0px;
+  }
+}

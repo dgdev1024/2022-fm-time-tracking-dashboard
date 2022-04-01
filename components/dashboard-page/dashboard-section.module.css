@@ -1,0 +1,26 @@
+.dashboardSection {
+  min-height: 100vh;
+  background-color: var(--color-dark-blue);
+}
+
+.dashboardSectionContainer {
+  display: grid;
+  place-items: center;
+  width: 85%;
+  height: 100vh;
+  margin: 0px auto;
+}
+
+.dashboardCardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "report"
+    "work"
+    "play"
+    "study"
+    "exercise"
+    "social"
+    "selfcare";
+  width: 100%;
+}

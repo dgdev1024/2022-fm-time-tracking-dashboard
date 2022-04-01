@@ -12,8 +12,8 @@
   grid-template-columns: auto 1fr;
   align-items: center;
 
-  width: 90%;
-  max-width: 1200px;
+  width: 85%;
+  /* max-width: 1200px; */
   height: 100%;
   margin: 0px auto;
   z-index: 3;
@@ -33,6 +33,14 @@
 
 .topbarButton:hover {
   background-color: var(--color-white) !important;
+}
+
+.topbarButton:last-child {
+  margin-right: 0px;
+}
+
+.topbarBrand {
+  margin: 0px;
 }
 
 .topbarButton svg {

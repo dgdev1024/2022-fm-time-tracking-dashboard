@@ -1,0 +1,93 @@
+.dashboardReport {
+  grid-area: report;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dashboardProfile {
+  padding: 32px 16px;
+  background-color: var(--color-desaturated-blue);
+  display: grid;
+  grid-template-columns: 64px auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboardAvatar {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  color: var(--color-very-dark-blue);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 1;
+  transition-property: background-color, color, opacity;
+  transition-duration: var(--time-transition);
+}
+
+.dashboardAvatar:disabled,
+.dashboardAvatar:disabled:hover {
+  opacity: 0;
+}
+
+.dashboardAvatar:hover {
+  color: var(--color-dark-blue);
+  background-color: var(--color-blue);
+  border: 2px solid var(--color-very-dark-blue);
+}
+
+.dashboardAvatar svg {
+  font-size: 2rem;
+}
+
+.dashboardFor {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: var(--color-pale-blue);
+}
+
+.dashboardName {
+  display: block;
+  padding-left: 4px;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  cursor: pointer;
+  border-left: 2px solid var(--color-pale-blue);
+}
+
+.dashboardName:hover {
+  border-color: var(--color-white);
+}
+
+.dashboardNameInput {
+  width: 100%;
+  padding: 0px 4px;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  background-color: var(--color-desaturated-blue);
+  border: none;
+  border-left: 2px solid var(--color-white);
+}
+
+.dashboardNameInput::placeholder {
+  color: var(--color-pale-blue);
+}
+
+.dashboardNameInput:hover {
+}
+
+.dashboardNameInput:disabled,
+.dashboardNameInput:disabled:hover {
+  color: var(--color-pale-blue);
+  cursor: not-allowed;
+}
+
+.dashboardNameInput:focus {
+  outline: none;
+}
